@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'callcenter';
+  src:  url('~src/font/callcenter.eot');
+  src:  url('~src/font/callcenter.eot') format('embedded-opentype'),
+    url('~src/font/callcenter.ttf') format('truetype'),
+    url('~src/font/callcenter.woff') format('woff'),
+    url('~src/font/callcenter.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'callcenter' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-busy:before {
+  content: "\e900";
+}
+.icon-call:before {
+  content: "\e901";
+}
+.icon-callback:before {
+  content: "\e902";
+}
+.icon-callout:before {
+  content: "\e903";
+}
+.icon-com:before {
+  content: "\e904";
+}
+.icon-conform:before {
+  content: "\e905";
+}
+.icon-holdon:before {
+  content: "\e906";
+}
+.icon-set:before {
+  content: "\e907";
+}
+.icon-turnout:before {
+  content: "\e908";
+}
+.icon-baochi:before {
+  content: "\e909";
+}
