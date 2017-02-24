@@ -4,8 +4,8 @@
     <!-- <v-footer></v-footer> -->
 </template>
 <script>
-import Mock from './mock'
-Mock.bootstrap()
+// import Mock from './mock'
+// Mock.bootstrap()
 
 export default {
   name: 'app',
@@ -18,10 +18,10 @@ export default {
   },
   watch: {
     '$route' (to, from) {
-      let user = JSON.parse(window.sessionStorage.getItem('user'))
-      if (!user) {
-        this.$router.replace('/login')
-      }
+      // let user = JSON.parse(window.sessionStorage.getItem('user'))
+      // if (!user) {
+      //   this.$router.replace('/login')
+      // }
     }
   },
   methods: {

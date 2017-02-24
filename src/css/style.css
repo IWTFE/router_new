@@ -22,3 +22,30 @@ li.el-menu-item-group{border-bottom:0}
 .bg-purple-dark{background:#32323a;color:yellow;line-height: 40px;text-align:left;}
 
 img{display:block;}
+
+.el-dialog__body {
+    padding:0;
+    color: #48576a;
+    font-size: 14px;
+}
+
+.dialog-footer {
+    width:100%;
+    background: #f2f2f2;
+    padding: 10px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.el-dialog {
+    position: absolute;
+    left: 50%;
+    margin-left: -6%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+.el-dialog--small {
+    width: 42%;
+}

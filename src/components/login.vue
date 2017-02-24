@@ -77,7 +77,7 @@
 }
 </style>
 <script>
-  import { requestLogin } from '../api/api'
+  // import { requestLogin } from '../api/api'
   export default {
     data () {
       return {
@@ -123,21 +123,23 @@
        // var _this = this
         this.$refs.ruleForm.validate((valid) => {
           if (valid) {
-            var loginParams = { username: this.ruleForm.name, password: this.ruleForm.pass }
-            requestLogin(loginParams).then(data => {
-              let {msg, code, user} = data
-              if (code !== 200) {
-                this.$notify({
-                  title: '错误',
-                  message: msg,
-                  type: 'error'
-                })
-              } else {
-                // window.alert('1')
-                window.sessionStorage.setItem('user', JSON.stringify(user))
-                this.$router.push({ path: '/welcome?id=1&name=欢迎页' })
-              }
-            })
+            // var loginParams = { username: this.ruleForm.name, password: this.ruleForm.pass }
+            // requestLogin(loginParams).then(data => {
+            //   let {msg, code, user} = data
+            //   if (code !== 200) {
+            //     this.$notify({
+            //       title: '错误',
+            //       message: msg,
+            //       type: 'error'
+            //     })
+            //   } else {
+            //     // window.alert('1')
+            //     window.sessionStorage.setItem('user', JSON.stringify(user))
+            //     this.$router.push({ path: '/welcome?id=1&name=欢迎页' })
+            //   }
+            // })
+            console.log(valid)
+            this.$router.push({ path: '/welcome?id=1&name=欢迎页' })
           } else {
             console.log('error submit!!')
             return false

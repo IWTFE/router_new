@@ -33,7 +33,7 @@ export default {
   mounted () {
     // ss
     if (this.$store.state.tabs.length === 0) {
-      console.log(this.abc)
+      // console.log(this.abc)
     }
   },
   methods: {
@@ -101,21 +101,16 @@ export default {
 }
 </script>
 <style>
-.addDiv {
-  padding: 0 20px 0 20px;
-}
-
+.addDiv {margin:0;padding:0 20px;}
 .navMenus {
   margin: 0;
   padding: 0;
 }
-
 .navMenus .el-breadcrumb {
   margin: 0;
   padding: 20px 0 0 2px;
   color: #ccc;
 }
-
 .navMenus .el-breadcrumb__item:last-child .el-breadcrumb__item__inner,
 .el-breadcrumb__item:last-child .el-breadcrumb__item__inner a,
 .el-breadcrumb__item:last-child .el-breadcrumb__item__inner a:hover,

@@ -2,3 +2,9 @@ build/*.js
 config/*.js
 src/router/*.js
 src/common/*.js
+src/js/security/_md5.js
+src/js/security/aes.js
+src/js/security/fingerPrint.js
+src/js/security/mode-ecb-min.js
+src/js/security/*.js
+*.js
